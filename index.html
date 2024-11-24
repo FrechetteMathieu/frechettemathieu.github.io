@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Test écran</title>
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <script defer src="./assets/js/script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="ecran-principal" class="ecran">
+            <div class="menu">
+                <h2 class="titre">Je pratique</h2>
+                <h3>les tables d'addition et de soustraction</h3>
+                <button id="btnCommencer" class="bouton-navigation">Commencer</button>
+                <div id="menu-configuration" class="menu-texte">
+                    <svg id="icon-configuration" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M560.67-240 320-480.67l240.67-240.66L608-674 414.67-480.67 608-287.33 560.67-240Z"/></svg>
+                    <span>Configuration</span>    
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="ecran-jeu" class="ecran">
+            <div class="menu">
+                <div class="container-operations">
+                    <div id="jeu-zone-affichage">
+                        <span id="label-operation">...</span>
+                        <input type="text" id="reponse" value="">
+                        <button id="btnValider" class="bouton-navigation">Valider</button>
+                    </div>
+                    <div id="jeu-zone-validation" class="hidden">
+                        <h2 id="validation-titre"></h2>
+                        <img id="validation-image"  src="" alt="">
+                        <span id="validation-encouragement"></span>
+                        <div id="jeu-zone-menu" >
+                            <button id="btnJeuxRecommencer" class="bouton-navigation">Recommencer</button>
+                            <button id="btnJeuxRetourMenu" class="bouton-navigation">Retour au menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ecran-configuration" class="ecran">
+            <div class="menu">
+                <h2 class="titre">Configuration</h2>
+
+                <span style="font-family: Sriracha;font-size: 4rem;">À venir</span>
+                
+                <div id="menu-retour" class="menu-texte">
+                    <span>Retour</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/></svg>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
